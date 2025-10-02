@@ -1,0 +1,52 @@
+body{
+    background-color: hsl(0, 0%, 70%);
+}
+h1{
+    display: flex;
+    justify-content: center;
+    font-size: 4rem;
+}
+#container{
+    border: 3px solid black;
+    border-radius: 10px;
+    width: auto;
+    padding: 20px;
+    background-color: white;
+}
+#btn-container{
+    text-align: center;
+}
+#clock{
+    font-size: 5em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.btn{
+    width: 100px;
+    height: 60px;
+    border: 3px solid white;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+#start{
+    background-color: hsl(120, 100%, 50%);
+}
+#start:hover{
+    background-color: hsl(120, 100%, 40%);
+} 
+#stop{
+    background-color: hsl(0, 100%, 50%);
+}
+#stop:hover{
+    background-color: hsl(0, 100%, 40%);
+}
+#reset{
+    background-color: hsl(195, 53%, 60%);
+}
+#reset:hover{
+    background-color: hsl(195, 53%, 50%);
+}

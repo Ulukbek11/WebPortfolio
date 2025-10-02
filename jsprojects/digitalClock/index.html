@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="clock-container">
+        <div id="clock">00:00:00</div>
+    </div>
+
+    <script>
+        function updateClock(){
+            const now = new Date();
+            let hours = now.getHours();
+            const meridiem = hours >= 12 ? "pm" : "am";
+            hours > 12 ? hours -= 12 : hours;
+            hours.toString().padStart(2, 0);
+            const minutes = now.getMinutes().toString().padStart(2, 0);
+            const sceonds = now.getSeconds().toString().padStart(2, 0);
+
+            const clockString = `${hours}:${minutes}:${sceonds}${meridiem}`;
+
+            document.getElementById("clock").textContent = clockString;
+
+        }
+
+        updateClock();
+        setInterval(updateClock, 1000)
+
+    </script>
+    
+</body>
+</html>

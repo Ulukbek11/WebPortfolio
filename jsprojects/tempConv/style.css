@@ -1,0 +1,42 @@
+body{
+    background-color: rgb(167, 166, 166);
+}
+#box{
+    display: block;
+    border: 0px solid;
+    border-radius: 5px;
+    background-color: white;
+    width: 220px;
+    height: auto;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+}
+#textBox{
+    margin-bottom: 10px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 150px;
+    height: 30px;
+    font-size: 20px;
+}
+.radios{
+    margin: 10px;
+}
+#sub{
+    margin-top: 10px;
+    width: 70px;
+    height: 40px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: hsl(0, 84%, 49%);
+    color: white;
+    font-size: 15px;
+}
+#sub:hover{
+    background-color: hsl(0, 84%, 39%);
+}
+#result{
+    font-size: 30px;
+}

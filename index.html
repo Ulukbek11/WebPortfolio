@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrapper1">
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">Home</a></li>
+            </ul>
+        </nav>
+    <div class="container">
+        <div id="home-box">
+            <div id="home">
+                <h1>Asanbekov Ulukbek</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Commodi consectetur, 
+                    ab aspernatur est minima similique sapiente 
+                    id eveniet, numquam ad culpa veniam saepe ipsam 
+                    sequi praesentium repellat odio exercitationem? 
+                    Obcaecati?</p>
+                <button>Lets get started ></button>
+            </div>
+            <div id="home-img">
+                <img src="imgs/portfolioimg.png" alt="">
+            </div>
+        </div>
+        <!-- <div>
+            <p></p>
+            <div>
+                <ul></ul>
+            </div>
+        </div> -->
+    </div>
+</div>
+<!-- --------------------------aboutme------------------- -->
+<div class="wrapper2">
+    <div class="container">
+        <div class="title">
+            <h2 id="myproject">My Projects</h2>
+        </div>
+        <div class="slider">
+            <div class="slides">
+                <a href="jsprojects/calculator/index.html" target="_blank"><img src="imgs/calculator.png" alt="" class="slide"></a>
+                <a href="jsprojects/DiceRoller/index.html" target="_blank"><img src="imgs/diceroller.png" alt="" class="slide"></a>
+                <a href="jsprojects/stopWatch/index.html" target="_blank"><img src="imgs/stopwatch.png" alt="" class="slide"></a>
+            </div>
+            <div class="slide-texts">
+                <p class="slide-text">1Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Commodi consectetur, 
+                    ab aspernatur est minima similique sapiente 
+                    id eveniet, numquam ad culpa veniam saepe ipsam 
+                    sequi praesentium repellat odio exercitationem? 
+                    Obcaecati?</p>
+                <p class="slide-text">2Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Commodi consectetur, 
+                    ab aspernatur est minima similique sapiente 
+                    id eveniet, numquam ad culpa veniam saepe ipsam 
+                    sequi praesentium repellat odio exercitationem? 
+                    Obcaecati?</p>
+                <p class="slide-text">3Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Commodi consectetur, 
+                    ab aspernatur est minima similique sapiente 
+                    id eveniet, numquam ad culpa veniam saepe ipsam 
+                    sequi praesentium repellat odio exercitationem? 
+                    Obcaecati?</p>
+            </div>
+            <button class="prev" onclick="prevSlide()">&#10094</button>
+            <button class="next" onclick="nextSlide()">&#10095</button>
+        </div>
+    </div>
+</div>
+<!-- ---------------------------------slider--------------------------------- -->
+<div class="wrapper1">
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="imgs/side.jpg" alt="ds">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur 
+                        adipisicing elit.
+                        Impedit consequuntur quas,
+                        necessitatibus amet odio corrupti
+                        numquam placeat magnam repellat voluptatem reiciendis,
+                        beatae voluptatum ipsum aut minima
+                        fugit eveniet, consequatur earum!</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('expirience')">Expirience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Java Backend</span><br>Building reliable backend systems</li>
+                            <li><span>Web development</span><br>Web app development</li>
+                            <li><span>App development</span><br>Building apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="expirience">
+                        <ul>
+                            <li><span>2025 - Current</span><br>Full-stack developer</li>
+                            <li><span>2024 - 2025</span><br>Java Backend</li>
+                            <li><span>2022 - 2024</span><br>Frontend developer</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2027</span><br>Ala-Too College</li>
+                            <li><span>2025</span><br>YouTube: Bro code, AmigosCode, Vlad Mitsushin</li>
+                            <li><span>2024</span><br>School: 12th gymnasium</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- -------------my services---------------------- -->
+
+    <div id="my-services">
+        <div class="container">
+
+            <h1 class="sub-title"> My Services</h1>
+
+            <div class="service-cards">
+                <div class="card1">
+                    <h2>System Design</h2>
+                    <p>Lorem ipsum, dolor sit amet
+                        consectetur adipisicing elit.
+                        Beatae quod reiciendis perferendis 
+                        libero voluptate rem ab neque inventore, 
+                        quas aliquid quia. Cupiditate nulla rerum 
+                        voluptate dicta consectetur esse ex rem?
+                    </p>
+
+                    <a href="">Learn more</a>
+                </div>
+                <div class="card2">
+                    <h2>Web design</h2>
+                    <p>Lorem ipsum, dolor sit amet
+                        consectetur adipisicing elit.
+                        Beatae quod reiciendis perferendis 
+                        libero voluptate rem ab neque inventore, 
+                        quas aliquid quia. Cupiditate nulla rerum 
+                        voluptate dicta consectetur esse ex rem?
+                    </p>
+
+                    <a href="">Learn more</a>
+                </div>
+                <div class="card3">
+                    <h2>Deploy</h2>
+                    <p>Lorem ipsum, dolor sit amet
+                        consectetur adipisicing elit.
+                        Beatae quod reiciendis perferendis 
+                        libero voluptate rem ab neque inventore, 
+                        quas aliquid quia. Cupiditate nulla rerum 
+                        voluptate dicta consectetur esse ex rem?
+                    </p>
+
+                    <a href="">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ------------------------------service-cards--------------------------- -->
+<div class="wrapper2">
+    <div class="container">
+        <div class="review-title">
+            <h2>Testimonials</h2>
+            <p>Lorem ipsum, dolor sit amet
+                consectetur adipisicing elit.
+                Beatae quod reiciendis perferendis 
+                libero voluptate rem ab neque inventore, 
+                quas aliquid quia. Cupiditate nulla rerum 
+                voluptate dicta consectetur esse ex rem?</p>
+        </div>
+        <div class="reviews">
+            <div class="review">
+                <p>Lorem ipsum, dolor sit amet
+                consectetur adipisicing elit.
+                Beatae quod reiciendis perferendis 
+                libero voluptate rem ab neque inventore, 
+                quas aliquid quia. Cupiditate nulla rerum 
+                voluptate dicta consectetur esse ex rem?</p>
+                <div class="client-profile">
+                    <img src="imgs/client1.png" alt="">
+                    <p class="profile-name">Client name</p>
+                </div>
+            </div>
+            <div class="review">
+                <p>Lorem ipsum, dolor sit amet
+                consectetur adipisicing elit.
+                Beatae quod reiciendis perferendis 
+                libero voluptate rem ab neque inventore, 
+                quas aliquid quia. Cupiditate nulla rerum 
+                voluptate dicta consectetur esse ex rem?</p>
+                <div class="client-profile">
+                    <img src="imgs/client2.png" alt="">
+                    <p class="profile-name">Client name</p>
+                </div>
+            </div>
+        </div>
+        <div class="reviews">
+            <div class="review">
+                <p>Lorem ipsum, dolor sit amet
+                consectetur adipisicing elit.
+                Beatae quod reiciendis perferendis 
+                libero voluptate rem ab neque inventore, 
+                quas aliquid quia. Cupiditate nulla rerum 
+                voluptate dicta consectetur esse ex rem?</p>
+                <div class="client-profile">
+                    <img src="imgs/client3.png" alt="">
+                    <p class="profile-name">Client name</p>
+                </div>
+            </div>
+            <div class="review">
+                <p>Lorem ipsum, dolor sit amet
+                consectetur adipisicing elit.
+                Beatae quod reiciendis perferendis 
+                libero voluptate rem ab neque inventore, 
+                quas aliquid quia. Cupiditate nulla rerum 
+                voluptate dicta consectetur esse ex rem?</p>
+                <div class="client-profile">
+                    <img src="imgs/client4.png" alt="">
+                    <p class="profile-name">Client name</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------------------------------testimonials---------------------------- -->
+<div class="footer-main">
+<div class="content">
+    <div>
+        <h1>Get in Touch</h1>
+        <br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+    </div>
+
+    <form action="">
+
+        <div class="box">
+            <label for="email ">Email</label>
+            <br>
+            <input type="email" name="email" id="" placeholder="Please enter your email">
+        </div>
+
+        <div class="box">
+            <label for="mob">Mobile</label>
+            <br>
+            <input type="tel" name="mob" placeholder="Enter mobile">
+        </div>
+
+        <div class="box">
+            <label for="message">Message</label>
+            <br>
+            <textarea name="message" id="" placeholder="Enter your message"></textarea>
+        </div>
+
+        <button type="submit">Submit -></button>
+        
+
+        
+    </form>
+
+    </div>
+    <div class="footer">
+        <p>Made with love❤</p>
+    </div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>

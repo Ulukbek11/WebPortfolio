@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function passwordGenerator(length,
+                                includeUpperCase,
+                                includeLowerCase,
+                                includeNumbers,
+                                includeCharacters){
+
+            let UpperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            let LowerCase = "abcdefghijklmnopqrstuvwxyz";
+            let numbers = "0123456789";
+            let characters = "!@#$%^&*()-_=+";
+
+            let allowedCharacters = "";
+            let password = "";
+
+            allowedCharacters += includeUpperCase ? UpperCase : "";
+            allowedCharacters += includeLowerCase ? LowerCase : "";
+            allowedCharacters += includeCharacters ? numbers : "";
+            allowedCharacters += includeNumbers ? characters : "";
+
+            if(length <=0){
+                console.log("(password must be at least 1 character long)")
+            }
+            for(let i = 0; i < length; i++){
+                let value = Math.floor(Math.random() * allowedCharacters.length);
+                password += allowedCharacters[value];
+            }
+            return password;
+                }
+
+            let length = 100;
+            let UpperCase = true;
+            let LowerCase = true;
+            let characters = true;
+            let numbers = true;
+
+            let password = passwordGenerator(length,
+                                    UpperCase,
+                                    LowerCase,
+                                    numbers,
+                                    characters);
+
+            console.log(`Your random password is ${password}`);
+    </script>
+</body>
+</html>

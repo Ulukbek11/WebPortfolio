@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="container">
+        <h2>Dice Roller App</h2>
+        <label for="">Num of dice: </label>
+        <input type="number" value="1" min="1" id="input">
+        <button id="roll" onclick="rollDice()">Roll dice</button>
+        <br>
+        <div id="result"></div>
+        <div id="images"></div>
+    </div>
+
+    <script>
+        function rollDice(){
+    const numOfRolls = document.getElementById("input").value;
+    const values = document.getElementById("result");
+    const imgValues = document.getElementById("images");
+    const result = [];
+    const images = [];
+
+    for(let i = 0; i < numOfRolls; i++){
+        let value = Math.floor(Math.random() * 6 + 1);
+        result.push(value);
+        images.push(`<img src="dices/${value}.png" alt="Dice: ${value}" width="100px" height="100px">`);
+    }
+    values.textContent = `result: ${result.join(", ")}`;
+    imgValues.innerHTML = images.join("");
+}
+    </script>
+    
+</body>
+</html>

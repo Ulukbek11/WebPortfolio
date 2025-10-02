@@ -1,0 +1,21 @@
+#count{
+    display: block;
+    text-align: center;
+    font-size: 7em;
+}
+div{
+    text-align: center;
+}
+button{
+    width: 100px;
+    height: 40px;
+    background-color: hsl(249, 70%, 65%);
+    color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: backg round-color 0.25s;
+}
+button:hover{
+    background-color: hsl(249, 70%, 45%);
+}

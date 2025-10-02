@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1>ToDo List</h1>
+        <form action="">
+            <input type="text" id="inputBar">
+            <input type="submit" id="subBut" onclick="createTask(event)">
+            <ul id="taskBox">
+
+            </ul>
+        </form>
+    </div>
+    <script>
+        const inputBar = document.getElementById("inputBar");
+        const subBut = document.getElementById("subBut");
+        const taskBox = document.getElementById("taskBox");
+        
+        function createTask(event){
+
+            event.preventDefault();
+
+            if(inputBar.value.trim === "") return;
+
+            let newLi = document.createElement("li");
+            newLi.textContent = inputBar.value;
+            taskBox.appendChild(newLi);
+
+            inputBar.value = "";
+        };
+        
+    </script>
+    
+</body>
+</html>
