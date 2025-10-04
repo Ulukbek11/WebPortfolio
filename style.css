@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     color: #ababab;
     font-family: Arial, sans-serif;
@@ -192,6 +195,7 @@ a img.displaySlide{
 }
 .tab-links::after{
     content: '';
+    cursor: none;
     height: 3px;
     width: 0;
     background: rgba(80, 200, 0, 1);
@@ -359,10 +363,23 @@ a img.displaySlide{
     height: 50px;
     border-radius: 5px;
     border-color: rgba(98, 186, 27, 1);
-    border-style:solid;
+    border-style:none;
     background-color: rgba(63, 142, 0, 1);
     color: white;
     padding: 10px;
+
+    box-shadow: 
+        0 0 20px rgba(63, 142, 0, 0.8), 
+        0 5px 15px rgba(0, 0, 0, 0.6); 
+    transition: 0.5s;
+
+}
+
+.footer-main button:hover {
+    background-color: rgb(80, 170, 20);
+    box-shadow: 
+        0 0 30px rgba(80, 200, 0, 1),     
+        0 8px 20px rgba(0, 0, 0, 0.6);
 }
 
 
